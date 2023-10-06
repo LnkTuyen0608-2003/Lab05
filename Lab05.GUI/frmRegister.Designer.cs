@@ -107,6 +107,7 @@
             this.dgvStudent.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.CellSelect;
             this.dgvStudent.Size = new System.Drawing.Size(732, 268);
             this.dgvStudent.TabIndex = 5;
+            this.dgvStudent.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvStudent_CellContentClick);
             // 
             // Chon
             // 

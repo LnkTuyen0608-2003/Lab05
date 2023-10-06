@@ -10,3 +10,15 @@ C:\Users\PC\source\repos\Lab05.GUI\Lab05.DAL\obj\Debug\Lab05.DAL.csproj.CoreComp
 C:\Users\PC\source\repos\Lab05.GUI\Lab05.DAL\obj\Debug\Lab05.DAL.csproj.CopyComplete
 C:\Users\PC\source\repos\Lab05.GUI\Lab05.DAL\obj\Debug\Lab05.DAL.dll
 C:\Users\PC\source\repos\Lab05.GUI\Lab05.DAL\obj\Debug\Lab05.DAL.pdb
+D:\21DTHD3\WĐ\Lab05.GUI\Lab05.DAL\bin\Debug\Lab05.DAL.dll.config
+D:\21DTHD3\WĐ\Lab05.GUI\Lab05.DAL\bin\Debug\Lab05.DAL.dll
+D:\21DTHD3\WĐ\Lab05.GUI\Lab05.DAL\bin\Debug\Lab05.DAL.pdb
+D:\21DTHD3\WĐ\Lab05.GUI\Lab05.DAL\bin\Debug\EntityFramework.dll
+D:\21DTHD3\WĐ\Lab05.GUI\Lab05.DAL\bin\Debug\EntityFramework.SqlServer.dll
+D:\21DTHD3\WĐ\Lab05.GUI\Lab05.DAL\bin\Debug\EntityFramework.xml
+D:\21DTHD3\WĐ\Lab05.GUI\Lab05.DAL\bin\Debug\EntityFramework.SqlServer.xml
+D:\21DTHD3\WĐ\Lab05.GUI\Lab05.DAL\obj\Debug\Lab05.DAL.csproj.AssemblyReference.cache
+D:\21DTHD3\WĐ\Lab05.GUI\Lab05.DAL\obj\Debug\Lab05.DAL.csproj.CoreCompileInputs.cache
+D:\21DTHD3\WĐ\Lab05.GUI\Lab05.DAL\obj\Debug\Lab05.DAL.csproj.CopyComplete
+D:\21DTHD3\WĐ\Lab05.GUI\Lab05.DAL\obj\Debug\Lab05.DAL.dll
+D:\21DTHD3\WĐ\Lab05.GUI\Lab05.DAL\obj\Debug\Lab05.DAL.pdb

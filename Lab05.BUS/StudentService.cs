@@ -12,34 +12,34 @@ namespace Lab05.BUS
     {
         public List<Student> GetAll()
         {
-            StudentModel context = new StudentModel();
-            return context.Student.ToList();
+            Model1 context = new Model1();
+            return context.Students.ToList();
         }
         public List<Student> GetAllHasNoMajor()
         {
-            StudentModel context = new StudentModel();
-            return context.Student.Where(p => p.MajorID == null).ToList();
+            Model1 context = new Model1();
+            return context.Students.Where(p => p.MajorID == null).ToList();
         }
         public List<Student> GetAllHasNoMajor(int facultyID)
         {
-            StudentModel context = new StudentModel();
-            return context.Student.Where(p => p.MajorID == null && p.FacultyID == facultyID).ToList();
+            Model1 context = new Model1();
+            return context.Students.Where(p => p.MajorID == null && p.FacultyID == facultyID).ToList();
         }
         public Student FindById(int studentId)
         {
-            StudentModel context = new StudentModel();
-            return context.Student.FirstOrDefault(p => p.StudentID == studentId);
+            Model1 context = new Model1();
+            return context.Students.FirstOrDefault(p => p.StudentID == studentId.ToString());
         }
         public void InsertUpdate(Student student)
         {
-            StudentModel context = new StudentModel();
-            context.Student.AddOrUpdate(student);
+            Model1 context = new Model1();
+            context.Students.AddOrUpdate(student);
             context.SaveChanges();
         }
         public void UpdateAvatar(int studentId, string avatarFileName)
         {
-            StudentModel context = new StudentModel();
-            var student = context.Student.FirstOrDefault(p => p.StudentID == studentId);
+            Model1 context = new Model1();
+            var student = context.Students.FirstOrDefault(p => p.StudentID == studentId.ToString());
 
             if (student != null)
             {
@@ -49,12 +49,12 @@ namespace Lab05.BUS
         }
         public void Delete(int studentId)
         {
-            StudentModel context = new StudentModel();
-            var studentToDelete = context.Student.FirstOrDefault(p => p.StudentID == studentId);
+            Model1 context = new Model1();
+            var studentToDelete = context.Students.FirstOrDefault(p => p.StudentID == studentId.ToString()  );
 
             if (studentToDelete != null)
             {
-                context.Student.Remove(studentToDelete);
+                context.Students.Remove(studentToDelete);
                 context.SaveChanges();
             }
         }

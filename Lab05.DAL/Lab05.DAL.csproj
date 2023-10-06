@@ -55,8 +55,8 @@
   <ItemGroup>
     <Compile Include="Entities\Faculty.cs" />
     <Compile Include="Entities\Major.cs" />
+    <Compile Include="Entities\Model1.cs" />
     <Compile Include="Entities\Student.cs" />
-    <Compile Include="Entities\StudentModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

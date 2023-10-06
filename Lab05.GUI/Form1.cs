@@ -60,7 +60,7 @@ namespace Lab05.GUI
                 dgvStudent.Rows[index].Cells[3].Value = item.AverageScore + " ";
                 if(item.MajorID != null)
                 {
-                    dgvStudent.Rows[index].Cells[4].Value = item.Major.Name + " ";
+                    dgvStudent.Rows[index].Cells[4].Value = item.MajorID + " ";
                 }
                 ShowAvatar(item.Avatar);
             }
@@ -134,7 +134,7 @@ namespace Lab05.GUI
                     // Tạo một đối tượng Student mới
                     Student student = new Student
                     {
-                        StudentID = studentID,
+                        StudentID = studentID.ToString(),
                         FullName = fullName,
                         AverageScore = averageScore,
                         FacultyID = facultyID,

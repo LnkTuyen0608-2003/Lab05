@@ -74,14 +74,14 @@ namespace Lab05.GUI
                 dgvStudent.Rows[index].Cells[4].Value = item.AverageScore + " ";
                 if(item.MajorID != null)
                 {
-                    dgvStudent.Rows[index].Cells[5].Value = item.Major.Name + " ";
+                    dgvStudent.Rows[index].Cells[5].Value = item.MajorID  + " ";
                 }
             }
         }
 
         private void btnRegister_Click(object sender, EventArgs e)
         {
-            using (StudentModel context = new StudentModel())
+            using (Model1 context = new Model1())
             {
                 foreach (DataGridViewRow row in dgvStudent.Rows)
                 {
@@ -90,7 +90,7 @@ namespace Lab05.GUI
                     {
                         int studentID = (int)row.Cells[1].Value;
                         int majorID = (int)cmbMajor.SelectedValue;
-                        var student = context.Student.FirstOrDefault(s => s.StudentID == studentID);
+                        var student = context.Students.FirstOrDefault(s => s.StudentID == studentID.ToString());
 
                         if (student != null)
                         {
@@ -108,5 +108,9 @@ namespace Lab05.GUI
             }
         }
 
+        private void dgvStudent_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

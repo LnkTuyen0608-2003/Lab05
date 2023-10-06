@@ -9,12 +9,6 @@ namespace Lab05.DAL.Entities
     [Table("Major")]
     public partial class Major
     {
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public Major()
-        {
-            Student = new HashSet<Student>();
-        }
-
         [Key]
         [Column(Order = 0)]
         [DatabaseGenerated(DatabaseGeneratedOption.None)]
@@ -25,12 +19,10 @@ namespace Lab05.DAL.Entities
         [DatabaseGenerated(DatabaseGeneratedOption.None)]
         public int MajorID { get; set; }
 
-        [StringLength(255)]
+        [Required]
+        [StringLength(200)]
         public string Name { get; set; }
 
         public virtual Faculty Faculty { get; set; }
-
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Student> Student { get; set; }
     }
 }

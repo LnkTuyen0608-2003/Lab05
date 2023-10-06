@@ -12,20 +12,21 @@ namespace Lab05.DAL.Entities
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public Faculty()
         {
-            Major = new HashSet<Major>();
-            Student = new HashSet<Student>();
+            Majors = new HashSet<Major>();
+            Students = new HashSet<Student>();
         }
 
         [DatabaseGenerated(DatabaseGeneratedOption.None)]
         public int FacultyID { get; set; }
 
-        [StringLength(255)]
+        [Required]
+        [StringLength(200)]
         public string FacultyName { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Major> Major { get; set; }
+        public virtual ICollection<Major> Majors { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Student> Student { get; set; }
+        public virtual ICollection<Student> Students { get; set; }
     }
 }

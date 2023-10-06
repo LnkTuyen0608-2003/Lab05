@@ -11,8 +11,8 @@ namespace Lab05.BUS
     {
         public List<Faculty> GetAll()
         {
-            StudentModel context = new StudentModel();
-            return context.Faculty.ToList();
+            Model1 context = new Model1();
+            return context.Faculties.ToList();
         }
     }
 }
